@@ -1,0 +1,91 @@
+/* src/components/Avatar.css */
+.avatar {
+    width: 250px;
+    height: 250px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    position: relative;
+    background-color: #ec8209;
+    }
+    .cap{
+        position:absolute;
+        top:0;
+        width:50%;
+        height:70px;
+        border-radius:5px;
+        background-color:red;
+        margin-top:-70px;
+        margin-left:60px;
+        }
+.cap.black{
+    background-color: rgb(247, 17, 17);
+}
+.cap.orange{
+    background-color: #ecdd09;
+}
+.cap.blue{
+    background-color: rgb(4, 4, 202);
+}
+    .hair {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: -20px; /* Default hair color */
+    }
+    .hair.blonde {
+    background-color: rgb(160, 161, 161);
+    }
+    .hair.brown {
+    background-color: rgb(104, 10, 10);
+    }
+    .hair.purple{
+        background-color:rgb(219, 4, 219);
+    }
+      .eyes {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+    }
+    .eyes.blue::before, .eyes.blue::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: rgb(24, 24, 75);
+    border-radius: 50%;
+    }
+    .eyes.green::before, .eyes.green::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: rgb(253, 13, 113);
+    border-radius: 50%;
+    }
+    .eyes.red::before, .eyes.red::after {
+        content: '';
+        width: 25px;
+        height: 25px;
+        background-color: rgb(247, 21, 13);
+        border-radius: 50%;}
+    .mouth {
+    position: absolute;
+    bottom: 40px;
+    left:6px;
+    width: 100%;
+    }
+    .mouth.smile::before {
+    content: ':)';
+    font-size: 55px;
+    color:rgb(63, 2, 2)
+    }
+    .mouth.sad::before {
+    content: ':(';
+    font-size: 55px;
+    color:rgb(63, 2, 2)
+    }
